@@ -7,20 +7,20 @@ public class ReverseString {
         if (Objects.isNull(word) || word.isBlank())
             return word;
 
-        StringBuilder reversedWorld = new StringBuilder();
+        StringBuilder reversedword = new StringBuilder();
 
         for (int i = word.length() - 1; i >= 0; i--) {
-            reversedWorld.append(word.charAt(i));
+            reversedword.append(word.charAt(i));
         }
-        return reversedWorld.toString();
+        return reversedword.toString();
     }
 
     public static String stringBuilderReverse(String word) {
         if (Objects.isNull(word) || word.isBlank())
             return word;
 
-        StringBuilder reversedWorld = new StringBuilder(word);
-        return reversedWorld.reverse().toString();
+        StringBuilder reversedword = new StringBuilder(word);
+        return reversedword.reverse().toString();
     }
 
     public static void main(String[] args) {

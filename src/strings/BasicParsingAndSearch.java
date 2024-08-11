@@ -1,22 +1,22 @@
-package string;
+package strings;
 
 public class BasicParsingAndSearch {
     public static void main(String[] args) {
-        String world = "HeLLo";
-        System.out.println(world.contains("LL"));
+        String word = "HeLLo";
+        System.out.println(word.contains("LL"));
 
-        parseContents(world);
+        parseContents(word);
     }
 
-    public static void parseContents(String world) {
+    public static void parseContents(String word) {
         System.out.println("Option 1");
-        for (char c : world.toCharArray()) {
+        for (char c : word.toCharArray()) {
             System.out.print(c);
         }
 
         System.out.println("\nOption 2");
-        for (int i = 0; i < world.length(); i++) {
-            char c = world.charAt(i);
+        for (int i = 0; i < word.length(); i++) {
+            char c = word.charAt(i);
             System.out.print(c);
         }
     }
